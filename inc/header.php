@@ -12,3 +12,13 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="css/master.css">
     </head>
     <body>
+
+        <header>
+            <div id="logo" class="bloc_left">
+                <img src="imgs/logo_keley.jpg" alt="logo_keley"/>
+            </div>
+            <div id="settings" class="bloc_right">
+                <img src="imgs/Settings.png" alt="logo_keley"/>
+            </div>
+            <div class="clear"></div>
+        </header>

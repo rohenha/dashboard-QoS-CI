@@ -1,17 +1,11 @@
 header{
-	background: red;
-	@media screen and (max-width: 768px) {
-	  width: 100px;
-	  float: none;
-	}
-	@media screen and (max-width: 450px) {
-	  width: 100px;
-	  float: none;
-	  h1{
-		  font-size: 11px;
-	  }
-	}
-	h1{
-		font-size: 13px;
-	}
+    #logo{
+         img{max-width:100px;height:auto;}
+         float:left;
+    }
+    #settings{
+        margin-top: 13px;
+    }
+   @include box-shadow( "0 0 5px #333" );
+		 
 }
