@@ -1,7 +1,1 @@
-{
-"version": 3,
-"mappings": "AAAA,MAAM;EACF,MAAM,EAAC,IAAI;EACX,gBAAgB,EAAC,OAAO;ECO1B,kBAAkB,EAAG,YAAU;EAC5B,eAAe,EAAG,YAAU;EACvB,UAAU,EAAG,YAAU",
-"sources": ["../scss/partials/_header.scss","../scss/partials/_function.scss"],
-"names": [],
-"file": "master.css"
-}
+{"version":3,"sources":["partials/_structure.scss","partials/_header.scss","partials/_functions.scss"],"names":[],"mappings":"AAAA;EAAE,WAAU;EAAC,UAAS,EAAG;;AACzB;EAAO,YAAW,EAAG;;AACrB;EAAW,YAAW,EAAG;;AACzB;EAAY,aAAY,EAAG;;ACH3B;ECCE,iCAAqB;EAEb,yBAAa,EDOtB;EAVD;IAGS,YAAW,EACf;IAJL;MAEa,iBAAgB;MAAC,aAAY,EAAG;EAF7C;IAMQ,iBAAiB,EACpB","file":"../scss/master.css","sourcesContent":["*{padding:0;margin:0;}\n.clear{clear:both;}\n.bloc_left{float:left;}\n.bloc_right{float:right;}","header{\n    #logo{\n         img{max-width:100px;height:auto;}\n         float:left;\n    }\n    #settings{\n        margin-top: 13px;\n    }\n   @include box-shadow( \"0 0 5px #333\" );\n\t\t \n}\n","@mixin box-shadow($params) {\n  -webkit-box-shadow : #{$params};\n     -moz-box-shadow : #{$params};\n          box-shadow : #{$params};\n}"]}
