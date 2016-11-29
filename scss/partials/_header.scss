@@ -1,0 +1,6 @@
+header{
+    height:40px;
+    background-color:#FFFFFF;
+    @include box-shadow( "0 0 5px #333" );
+}
+

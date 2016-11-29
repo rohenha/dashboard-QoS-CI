@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,MAAM;EACF,MAAM,EAAC,IAAI;EACX,gBAAgB,EAAC,OAAO;ECO1B,kBAAkB,EAAG,YAAU;EAC5B,eAAe,EAAG,YAAU;EACvB,UAAU,EAAG,YAAU",
+"sources": ["../scss/partials/_header.scss","../scss/partials/_function.scss"],
+"names": [],
+"file": "master.css"
+}
