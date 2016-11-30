@@ -5,12 +5,13 @@
 
     form{
         margin-top:30px;
-        input{border:none;}
+        input{border:none;} 
         input[type='text'],input[type='password']{
-            width:100%; padding:10px;box-sizing:border-box;
+            width:100%; padding:10px;box-sizing:border-box;background-color: $color3; 
         }
         p{margin-bottom: 10px;}
         label{margin-bottom:4px;display:block}
+       
     }
 }
 
