@@ -152,15 +152,33 @@
 .bloc_right {
   float: right; }
 
+.bloc_size {
+  max-width: 1366px;
+  margin: 0 auto; }
+
+html, body {
+  background-color: #F5F5F5; }
+
+.popin {
+  display: none; }
+
 header {
-  -webkit-box-shadow: 0 0 5px #333;
-  box-shadow: 0 0 5px #333; }
+  -webkit-box-shadow: 0 0 10px #333;
+  box-shadow: 0 0 10px #333;
+  background: #fff;
+  padding: 10px; }
   header #logo {
     float: left; }
     header #logo img {
-      max-width: 100px;
+      max-height: 30px;
       height: auto; }
   header #settings {
-    margin-top: 13px; }
+    margin-top: 5px; }
+
+#form_connexion {
+  width: 150px;
+  margin: 0 auto; }
+  #form_connexion h1 {
+    text-align: center; }
 
 /*# sourceMappingURL=../css/master.css.map */

@@ -1,11 +1,14 @@
 header{
+   
     #logo{
-         img{max-width:100px;height:auto;}
+         img{max-height:30px;height:auto;}
          float:left;
     }
     #settings{
-        margin-top: 13px;
+        margin-top: 5px;
     }
-   @include box-shadow( "0 0 5px #333" );
+   @include box-shadow( "0 0 10px #333" );
+   background: $color3;
+   padding:10px;
 		 
 }

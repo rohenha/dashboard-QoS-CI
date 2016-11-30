@@ -14,11 +14,13 @@ and open the template in the editor.
     <body>
 
         <header>
-            <div id="logo" class="bloc_left">
-                <img src="imgs/logo_keley.jpg" alt="logo_keley"/>
+            <div class="bloc_size">
+                <div id="logo" class="bloc_left">
+                    <img src="imgs/logo_keley.jpg" alt="logo_keley"/>
+                </div>
+                <div id="settings" class="bloc_right">
+                    <img src="imgs/Settings.png" alt="logo_keley"/>
+                  </div>
+                <div class="clear"></div>
             </div>
-            <div id="settings" class="bloc_right">
-                <img src="imgs/Settings.png" alt="logo_keley"/>
-            </div>
-            <div class="clear"></div>
         </header>
