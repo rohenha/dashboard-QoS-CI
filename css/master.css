@@ -2,66 +2,99 @@
   padding: 0;
   margin: 0; }
 
+html, body {
+  width: 100%; }
+
 .content {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 10px; }
+  padding: 10px;
+  max-width: 1366px;
+  width: 100%;
+  margin: 0 auto; }
 
-.block {
+.block-container {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-radius: 4px;
-  position: relative;
-  padding: 10px;
-  font-size: 100%; }
-  .block::before {
-    content: "";
-    display: block;
-    width: 80%;
-    height: 50%;
-    opacity: 0.59;
-    background-color: black;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -10px;
-    margin: auto;
-    z-index: -1;
-    -webkit-filter: blur(20px);
-            filter: blur(20px); }
-  .block.square::after {
-    content: "";
-    display: block;
-    padding-top: 100%; }
-  .block.square .block-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    cursor: pointer; }
-    .block.square .block-content h3, .block.square .block-content p {
-      color: white;
-      font-family: "Code-Bold", sans-serif;
-      font-size: 3em;
-      letter-spacing: 2.09px; }
-    .block.square .block-content .percentage {
-      width: 100%;
-      height: 70px;
+  padding: 10px; }
+  .block-container .block {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 4px;
+    position: relative;
+    padding: 10px;
+    font-size: 100%; }
+    .block-container .block:hover::before {
+      bottom: -20px;
+      width: 85%; }
+    .block-container .block::before {
+      content: "";
+      display: block;
+      width: 80%;
+      height: 50%;
+      opacity: 0.59;
+      background-color: black;
       position: absolute;
-      bottom: 0;
-      left: 0; }
-      .block.square .block-content .percentage p {
-        font-weight: bold;
-        color: rgba(0, 0, 0, 0.2);
-        line-height: 50px;
-        padding: 0 10px;
-        -webkit-box-sizing: border-box;
-                box-sizing: border-box; }
-      .block.square .block-content .percentage .bar {
-        display: block;
-        height: 20px;
-        background-color: rgba(0, 0, 0, 0.2); }
+      left: 0;
+      right: 0;
+      bottom: -10px;
+      margin: auto;
+      z-index: -1;
+      -webkit-filter: blur(20px);
+              filter: blur(20px);
+      -webkit-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out; }
+
+.block.square::after {
+  content: "";
+  display: block;
+  padding-top: 100%; }
+
+.block.square .block-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer; }
+  .block.square .block-content h3, .block.square .block-content p {
+    color: #F5F5F5;
+    font-family: "Code-Bold", sans-serif;
+    font-size: 3em;
+    letter-spacing: 2.09px; }
+  .block.square .block-content .percentage {
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+  .block.square .block-content p {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.2);
+    line-height: 50px;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .block.square .block-content .bar {
+    display: block;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.2); }
+
+.block.square .notif-content p {
+  color: #F5F5F5;
+  font-family: 'Open-sans', sans-serif;
+  font-size: 1.4em;
+  line-height: inherit;
+  letter-spacing: inherit;
+  font-weight: normal;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .block.square .notif-content p.status {
+    font-weight: bold; }
+    .block.square .notif-content p.status span {
+      font-weight: normal;
+      text-decoration: underline; }
 
 .w100 {
   width: 100%; }
@@ -177,6 +210,12 @@ html, body {
 .popin {
   display: none; }
 
+.btn-red {
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5px 10px; }
+
 header {
   -webkit-box-shadow: 0 0 10px #333;
   box-shadow: 0 0 10px #333;
@@ -195,7 +234,7 @@ header {
   #form_connexion h1 {
     text-align: center; }
   #form_connexion form {
-    margin-top: 20px; }
+    margin-top: 30px; }
     #form_connexion form input {
       border: none; }
     #form_connexion form input[type='text'], #form_connexion form input[type='password'] {
@@ -205,5 +244,8 @@ header {
               box-sizing: border-box; }
     #form_connexion form p {
       margin-bottom: 10px; }
+    #form_connexion form label {
+      margin-bottom: 4px;
+      display: block; }
 
 /*# sourceMappingURL=../css/master.css.map */

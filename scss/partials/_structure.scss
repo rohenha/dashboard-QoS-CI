@@ -5,3 +5,4 @@
 .bloc_size{max-width:$desktopHD;margin:0 auto;box-sizing: border-box; padding:10px;}
 html,body{background-color: $color2;}
 .popin{display:none;}
+.btn-red{@include border-radius(10px);box-sizing: border-box; padding:5px 10px} 
