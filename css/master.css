@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+@font-face {
+  font-family: 'codeBold';
+  src: url("../fonts/code_bold-webfont.woff2") format("woff2"), url("../fonts/code_bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 * {
   padding: 0;
   margin: 0; }
@@ -59,7 +66,7 @@ html, body {
   cursor: pointer; }
   .block.square .block-content h3, .block.square .block-content p {
     color: #F5F5F5;
-    font-family: "Code-Bold", sans-serif;
+    font-family: "codeBold", sans-serif;
     font-size: 3em;
     letter-spacing: 2.09px; }
   .block.square .block-content .percentage {
@@ -68,6 +75,9 @@ html, body {
     position: absolute;
     bottom: 0;
     left: 0; }
+    @media screen and (max-width: 450px) {
+      .block.square .block-content .percentage {
+        display: none; } }
   .block.square .block-content p {
     font-weight: bold;
     color: rgba(0, 0, 0, 0.2);
@@ -80,24 +90,45 @@ html, body {
     background-color: rgba(0, 0, 0, 0.2); }
 
 .block.square .notif-content {
-  position: absolute;
-  padding: 30px;
-  opacity: 0;
-  visibility: hidden; }
+  overflow: hidden;
+  max-height: 0;
+  margin: 0;
+  padding: 0 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
   .block.square .notif-content p {
-    color: #F5F5F5;
+    color: #fff;
     font-family: 'Open-sans', sans-serif;
     font-size: 1.4em;
     line-height: inherit;
-    letter-spacing: inherit;
     font-weight: normal;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box; }
+            box-sizing: border-box;
+    text-align: justify;
+    letter-spacing: 1.25px;
+    font-weight: normal; }
     .block.square .notif-content p.status {
-      font-weight: bold; }
+      font-weight: bold;
+      margin-bottom: 10px; }
       .block.square .notif-content p.status span {
         font-weight: normal;
         text-decoration: underline; }
+
+.block.square:hover .anim, .block.square.active .anim {
+  width: 80px;
+  -webkit-transition: all 0.3s ease-out 0.1s;
+  transition: all 0.3s ease-out 0.1s; }
+
+.block.square:hover .notif-content, .block.square.active .notif-content {
+  opacity: 1;
+  visibility: visible;
+  max-height: 150px;
+  margin: 15px 0 15px 0;
+  -webkit-transition: all 0.3s ease-out 0.1s;
+  transition: all 0.3s ease-out 0.1s; }
 
 .w100 {
   width: 100%; }
@@ -250,9 +281,24 @@ html, body {
   .gradient.blue::before {
     background-color: #087BFF; }
 
+.gradient.yellow {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#FFF100), to(#F7991C));
+  background-image: -webkit-linear-gradient(top left, #FFF100 0%, #F7991C 100%);
+  background-image: linear-gradient(to bottom right, #FFF100 0%, #F7991C 100%); }
+  .gradient.yellow::before {
+    background-color: #FFF100; }
+
+.gradient.red {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#F3035A), to(#ED0038));
+  background-image: -webkit-linear-gradient(top left, #F3035A 0%, #ED0038 100%);
+  background-image: linear-gradient(to bottom right, #F3035A 0%, #ED0038 100%); }
+  .gradient.red::before {
+    background-color: #F3035A; }
+
 .anim {
   display: block;
-  margin: 0 0 10px 0; }
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
   .anim.large {
     width: 150px; }
     @media screen and (max-width: 1024px) {
