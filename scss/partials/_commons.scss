@@ -49,7 +49,7 @@
 				left: 0;
 				p{
 					font-weight: bold;
-					color: rgba(0,0,0,0.20);
+					color: rgba($color4,0.20);
 					line-height: 50px;
 					padding:0 10px;
 					box-sizing: border-box;
@@ -57,7 +57,7 @@
 				.bar{
 					display: block;
 					height: 20px;
-					background-color: rgba(0,0,0,0.20);
+					background-color: rgba($color4,0.20);
 				}
 			}
 		}
