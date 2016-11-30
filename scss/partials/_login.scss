@@ -7,10 +7,33 @@
         margin-top:30px;
         input{border:none;} 
         input[type='text'],input[type='password']{
-            width:100%; padding:10px;box-sizing:border-box;background-color: $color3; 
+            width:100%;
+            padding:10px;
+            box-sizing:border-box;
+            background-color: $color3;
+            outline: none;
+            border:1px solid #e4e1e1;
+            @include border-radius(3px);
+            position:relative;
+            &:-webkit-autofill{background-color: $color3 !important;
+                               -webkit-box-shadow: 0 0 0px 1000px white inset;
+             -webkit-text-fill-color: #a9a9a9 !important; }
+            &::before{content: 'df';
+                   position: absolute;
+                   top:100%;
+                   left:0;
+                   width: 80%;
+                   height:20px;
+                   background-color: black;
+                   filter:blur(15px);
+                   opacity: 0.8;
+                   display:block;}
         }
         p{margin-bottom: 10px;}
-        label{margin-bottom:4px;display:block}
+        label{
+              margin-bottom:4px;
+              display:block;
+        }
        
     }
 }

@@ -3,6 +3,6 @@
 .bloc_left{float:left;}
 .bloc_right{float:right;}  
 .bloc_size{max-width:$desktopHD;margin:0 auto;box-sizing: border-box; padding:10px;}
-html,body{background-color: $color2;}
+html,body{background-color: $color2;font-size:100%;}
 .popin{display:none;}
-.btn-red{@include border-radius(10px);box-sizing: border-box; padding:5px 10px} 
+.btn-purple{@include border-radius(10px);box-sizing: border-box; padding:5px 10px; background-color:$color8;color:$color3;cursor:pointer;} 
