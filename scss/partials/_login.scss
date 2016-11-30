@@ -1,5 +1,16 @@
 #form_connexion{
     h1{text-align: center}
-    width:150px;
-    margin: 0 auto;
+    width:300px;
+    margin: 10px auto;
+
+    form{
+        margin-top:20px;
+        input{border:none;}
+        input[type='text'],input[type='password']{
+            width:100%; padding:10px;box-sizing:border-box;
+        }
+        p{margin-bottom: 10px;}
+    }
 }
+
+

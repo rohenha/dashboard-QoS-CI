@@ -166,7 +166,10 @@
 
 .bloc_size {
   max-width: 1366px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px; }
 
 html, body {
   background-color: #F5F5F5; }
@@ -177,8 +180,7 @@ html, body {
 header {
   -webkit-box-shadow: 0 0 10px #333;
   box-shadow: 0 0 10px #333;
-  background: #fff;
-  padding: 10px; }
+  background: #fff; }
   header #logo {
     float: left; }
     header #logo img {
@@ -188,9 +190,20 @@ header {
     margin-top: 5px; }
 
 #form_connexion {
-  width: 150px;
-  margin: 0 auto; }
+  width: 300px;
+  margin: 10px auto; }
   #form_connexion h1 {
     text-align: center; }
+  #form_connexion form {
+    margin-top: 20px; }
+    #form_connexion form input {
+      border: none; }
+    #form_connexion form input[type='text'], #form_connexion form input[type='password'] {
+      width: 100%;
+      padding: 10px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
+    #form_connexion form p {
+      margin-bottom: 10px; }
 
 /*# sourceMappingURL=../css/master.css.map */

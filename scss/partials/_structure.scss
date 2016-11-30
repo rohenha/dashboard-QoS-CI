@@ -2,6 +2,6 @@
 .clear{clear:both;}
 .bloc_left{float:left;}
 .bloc_right{float:right;}  
-.bloc_size{max-width:$desktopHD;margin:0 auto;}
+.bloc_size{max-width:$desktopHD;margin:0 auto;box-sizing: border-box; padding:10px;}
 html,body{background-color: $color2;}
 .popin{display:none;}
