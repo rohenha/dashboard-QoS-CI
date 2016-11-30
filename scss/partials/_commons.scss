@@ -1,16 +1,16 @@
 *{padding:0; margin:0;}
 html,body{width:100%;}
-.content{box-sizing: border-box; padding:10px; max-width: $desktopHD; width: 100%; margin:0 auto;}
+.container{box-sizing: border-box; padding:10px; max-width: $desktopHD; width: 100%; margin:0 auto;}
 
 .block-container{
 	box-sizing: border-box;
 	padding: 10px;
+	z-index: 1;
 	.block{
-		box-sizing: border-box;
-		border-radius: 4px;
 		position: relative;
-		padding: 10px;
 		font-size: 100%;
+		border-radius: 4px;
+		background:$color2;
 		&:hover{
 			&::before{
 				bottom: -20px;
@@ -21,16 +21,16 @@ html,body{width:100%;}
 			content: "";
 			display:block;
 			width:80%;
-			height: 50%;
-			opacity: 0.59;
+			height: 10px;
+			opacity: 0.8;
 			background-color: black;
 			position: absolute;
 			left: 0;
 			right: 0;
-			bottom: -10px;
+			top: 100%;
 			margin: auto;
-			z-index: -1;
-			filter: blur(20px);
+			z-index: 0;
+			filter: blur(15px);
 			transition: all 0.3s ease-out;
 		}
 	}
@@ -44,6 +44,7 @@ html,body{width:100%;}
 	}
 	.block-content{
 		position: absolute;
+		border-radius: 4px;
 		top: 0;
 		left: 0;
 		width: 100%;
@@ -65,17 +66,20 @@ html,body{width:100%;}
 		p{
 			font-weight: bold;
 			color: rgba($color4,0.20);
-			line-height: 50px;
 			padding:0 10px;
 			box-sizing: border-box;
 		}
 		.bar{
 			display: block;
-			height: 20px;
+			height: 10px;
 			background-color: rgba($color4,0.20);
 		}
 	}
 	.notif-content{
+		position: absolute;
+		padding: 30px;
+		opacity: 0;
+		visibility: hidden;
 		p{
 			color: $color2;
 			font-family: 'Open-sans', sans-serif;
@@ -83,7 +87,6 @@ html,body{width:100%;}
 			line-height: inherit;
 			letter-spacing: inherit;
 			font-weight: normal;
-			padding: 10px;
 			box-sizing: border-box;
 			&.status{
 				font-weight: bold;
@@ -94,14 +97,41 @@ html,body{width:100%;}
 			}
 		}
 	}
+	&:hover,&.active{
+		.notif-content{
+
+		}
+	}
 }
 
 .w100{width:100%;}
 .w66{width:66.666666%;}
 .w50{width:50%;}
 .w33{width:33.3333%;}
-.w25{width:25%;}
-.w20{width:20%; font-size: 70%; img{width: 70px;}}
+.w25{width:25%; font-size:70%;}
+.w20{width:20%; font-size: 70%;}
+
+.wd100{@media screen and (max-width: $desktop) {width:100%;}}
+.wd66{@media screen and (max-width: $desktop) {width:66.666666%;}}
+.wd50{@media screen and (max-width: $desktop) {width:50%;}}
+.wd33{@media screen and (max-width: $desktop) {width:33.333333%;}}
+.wd25{@media screen and (max-width: $desktop) {width:25%;}}
+.wd20{@media screen and (max-width: $desktop) {width:20%;}}
+
+
+.wt100{@media screen and (max-width: $tablet) {width:100%;}}
+.wt66{@media screen and (max-width: $tablet) {width:66.666666%;}}
+.wt50{@media screen and (max-width: $tablet) {width:50%;}}
+.wt33{@media screen and (max-width: $tablet) {width:33.333333%;}}
+.wt25{@media screen and (max-width: $tablet) {width:25%;}}
+.wt20{@media screen and (max-width: $tablet) {width:20%;}}
+
+.wm100{@media screen and (max-width: $mobile) {width:100%;}}
+.wm66{@media screen and (max-width: $mobile) {width:66.666666%;}}
+.wm50{@media screen and (max-width: $mobile) {width:50%;}}
+.wm33{@media screen and (max-width: $mobile) {width:33.333333%;}}
+.wm25{@media screen and (max-width: $mobile) {width:25%;}}
+.wm20{@media screen and (max-width: $mobile) {width:20%;}}
 
 .flex{
 	display: flex;
@@ -123,7 +153,7 @@ html,body{width:100%;}
 
 .gradient{
 	&.blue{
-		background-image: linear-gradient(to bottom right, #15B2FF 0%, #087BFF 100%);
+		background: linear-gradient(to bottom right, #15B2FF 0%, #087BFF 100%);
 		&::before{
 			background-color: $color5;
 		}
@@ -135,9 +165,18 @@ html,body{width:100%;}
 
 .anim{
 	display: block;
-	margin: 10px 0;
+	margin: 0 0 10px 0;
 	&.large{
 		width: 150px;
+		@media screen and (max-width: $desktop) {
+			width: 100px;
+		}
+		@media screen and (max-width: $tablet) {
+			width: 120px;
+		}
+		@media screen and (max-width: $mobile) {
+			width: 200px;
+		}
 	}
 	&.small{
 		width: 80px;

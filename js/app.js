@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	// Initialiser les animations
 	$('.anim').each(function(index, anim) {
 		switch (true) {
 			case $(this).hasClass('whiteSun'):
@@ -8,7 +9,6 @@ $(document).ready(function() {
 				var animationName = "purpleSun";
 			break;
 			default:
-
 		}
 		bodymovin.loadAnimation({
 			container: anim, // the dom element
@@ -20,4 +20,11 @@ $(document).ready(function() {
 			path:'animations/'+animationName+'.json'
 		});
 	});
+
+	// Listener pour écouter les blocks carrés
+	if ($(document).width()< 768) {
+		$('.block.square').on('click', function(event) {
+			$(this).toggleClass('active');
+		});
+	}
 });
