@@ -1,7 +1,7 @@
 <?php include "inc/header.php" ?>
 
 <div id="wrapper">
-    <div class="bloc_size">
+    <div class="container">
         <div id="form_connexion">
             <h1>Page de connexion</h1>
             <form  autocomplete="off" method="POST" action="/" >

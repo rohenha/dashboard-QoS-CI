@@ -1,14 +1,15 @@
 #form_connexion{
-    h1{text-align: center}
+    h1{text-align: center;font-family: $code;color:$color1;text-transform: uppercase;}
     width:370px;
-    margin: 10px auto;
+    margin: 70px auto 0 auto;
     @media screen and (max-width: $tablet) {
         width : 100%;
     }
     form{
-        margin-top:30px;
+        margin-top:50px;
         input{border:none;
               font-family: $opensans;
+             
         } 
         input[type='text'],input[type='password']{
             width:100%;
@@ -31,7 +32,7 @@
 
         }
         p{
-            margin-bottom: 10px;
+            margin-bottom: 30px;
             &#space{ margin-top: 30px;}
             @media screen and (max-width: $tablet) {
                 margin-top: 40px;
