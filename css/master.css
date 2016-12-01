@@ -369,10 +369,14 @@ header {
   margin: 10px auto; }
   #form_connexion h1 {
     text-align: center; }
+  @media screen and (max-width: 768px) {
+    #form_connexion {
+      width: 100%; } }
   #form_connexion form {
     margin-top: 30px; }
     #form_connexion form input {
-      border: none; }
+      border: none;
+      font-family: "Open Sans", sans-serif; }
     #form_connexion form input[type='text'], #form_connexion form input[type='password'] {
       width: 100%;
       padding: 10px;
@@ -389,10 +393,14 @@ header {
         border: none;
         background-color: #fff; }
       #form_connexion form input[type='text']:-webkit-autofill, #form_connexion form input[type='password']:-webkit-autofill {
-        -webkit-box-shadow: 0 0 0 1000px #fff inset;
         color: #575757; }
     #form_connexion form p {
       margin-bottom: 10px; }
+      #form_connexion form p#space {
+        margin-top: 20px; }
+      @media screen and (max-width: 768px) {
+        #form_connexion form p {
+          margin-top: 40px; } }
     #form_connexion form label {
       margin-bottom: 4px;
       display: block; }
