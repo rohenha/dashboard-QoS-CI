@@ -1,13 +1,11 @@
 header{
-   
+	>div{padding: 0 10px; box-sizing: border-box;}
     #logo{
          img{max-height:30px;height:auto;}
-         float:left;
     }
     #settings{
-        margin-top: 5px;
     }
-   @include box-shadow( "0 0 10px #333" );
+   box-shadow: 0 0 6px 0 rgba($color1, 0.2);
    background: $color3;
-		 
+
 }

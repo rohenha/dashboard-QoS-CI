@@ -14,13 +14,14 @@ and open the template in the editor.
     <body>
 
         <header>
-            <div class="bloc_size">
-                <div id="logo" class="bloc_left">
+            <div class="container row flex aiC jcSB">
+                <a href="#" id="logo">
                     <img src="imgs/logo_keley.jpg" alt="logo_keley"/>
-                </div>
-                <div id="settings" class="bloc_right">
+                </a>
+                <a href="#" id="settings">
                     <img src="imgs/Settings.png" alt="logo_keley"/>
-                  </div>
-                <div class="clear"></div>
+				</a>
             </div>
         </header>
+
+		<?php include "inc/objectifs.php" ?>
