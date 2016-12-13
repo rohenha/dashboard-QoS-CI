@@ -1,1 +1,12 @@
- 
+footer{
+	box-shadow: 0 0 8px 0 rgba($color1, 0.1);
+	background: $color3;
+	font-size: 13px;
+	color: darken($color2, 15%);
+	font-family: $opensans;
+	padding: 5px 0;
+	a{
+		color: darken($color2, 30%);
+		text-decoration: none;
+	}
+}

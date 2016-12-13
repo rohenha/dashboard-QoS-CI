@@ -17,15 +17,15 @@ $(document).ready(function() {
 			default:
 			break;
 		}
-		// bodymovin.loadAnimation({
-		// 	container: anim, // the dom element
-		// 	renderer: 'svg',
-		// 	loop: true,
-		// 	prerender: true,
-		// 	autoplay: true,
-		// 	autoloadSegments: true,
-		// 	path:'animations/'+animationName+'.json'
-		// });
+		bodymovin.loadAnimation({
+			container: anim, // the dom element
+			renderer: 'svg',
+			loop: true,
+			prerender: true,
+			autoplay: true,
+			autoloadSegments: true,
+			path:'animations/'+animationName+'.json'
+		});
 	});
 
 	// Listener pour écouter les blocks carrés
