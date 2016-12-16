@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Keley-Live - Project</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/master.css">
@@ -19,7 +19,7 @@ and open the template in the editor.
                     <img src="imgs/logo_keley.jpg" alt="logo_keley"/>
                 </a>
                 <a href="#" id="settings">
-                    <img src="imgs/Settings.png" alt="logo_keley"/>
+                    <img src="imgs/Settings.png" alt="settings"/>
 				</a>
             </div>
         </header>
