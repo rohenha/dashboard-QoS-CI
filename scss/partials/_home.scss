@@ -1,0 +1,7 @@
+.project{
+	&:hover{ .block-content{ h3{ transform: scale(1); } } }
+	.block-content{
+		img{ width: 50%; }
+		h3{ margin-top: 40px; }
+	}
+}

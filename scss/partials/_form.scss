@@ -184,3 +184,24 @@ input[type="text"], input[type="password"]{
 		&.white{box-shadow: 0 9px 5px -3px rgba($color3, 0.3); color:$color1;}
 	}
 }
+
+
+.filters{
+	margin: 10px 0;
+	a{
+		color: $color1;
+		font-family: $opensans;
+		padding: 6px 20px;
+		box-sizing: border-box;
+		font-size: 1em;
+		text-decoration: none;
+		margin: 0 5px;
+		font-weight: lighter;
+		&.active{
+			border-radius: 50px;
+			background-color: $color1;
+			color: $color2;
+			// font-weight: bold;
+		}
+	}
+}
