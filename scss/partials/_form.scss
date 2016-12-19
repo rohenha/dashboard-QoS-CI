@@ -163,6 +163,7 @@ input[type="text"], input[type="password"]{
 	border: 0px;
 	line-height: 35px;
 	cursor: pointer;
+	display: inline-block;
 	transform: translateY(-5px);
 	transition: all 0.3s ease-out;
 	img{width: 27px; padding-right: 10px;}
@@ -188,20 +189,23 @@ input[type="text"], input[type="password"]{
 
 .filters{
 	margin: 10px 0;
+	text-align: right;
 	a{
 		color: $color1;
 		font-family: $opensans;
 		padding: 6px 20px;
 		box-sizing: border-box;
-		font-size: 1em;
+		font-size: 0.8em;
 		text-decoration: none;
 		margin: 0 5px;
 		font-weight: lighter;
+		border-radius: 50px;
+		border: 1px solid rgba($color1,0);
+		transition: all 0.15s ease-out;
+		&:hover{ border: 1px solid rgba($color1,1); }
 		&.active{
-			border-radius: 50px;
 			background-color: $color1;
 			color: $color2;
-			// font-weight: bold;
 		}
 	}
 }

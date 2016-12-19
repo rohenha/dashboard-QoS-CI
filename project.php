@@ -13,9 +13,9 @@
 	</div>
 	<div class="row">
 		<div class="block-container w25 wd33 wt50 wm100">
-			<a href="#" class="block square w100 gradient blue">
+			<a href="#" class="block square w100 gradient green">
 				<div class="block-content">
-						<span class="anim whiteSun large" class="bodymovin" data-animation-path="animations/" data-anim-loop="true" data-name="White Sun"></span>
+						<span class="anim whiteSun large" class="bodymovin" data-anim-loop="true" data-name="White Sun"></span>
 						<div class="notif-content">
 							<p class="status">Status :<span>Success</span></p>
 							<p>Lors du dernier push sur Gitlab, les tests de PHP MD n'ont détectés aucun problème</p>
@@ -32,7 +32,7 @@
 		<div class="block-container w25 wd33 wt50 wm100">
 			<div class="block square w100 gradient red">
 				<div class="block-content">
-						<span class="anim whiteNuageux large" class="bodymovin" data-animation-path="animations/" data-anim-loop="true" data-name="White Nuageux"></span>
+						<span class="anim whiteNuageux large" class="bodymovin" data-anim-loop="true" data-name="White Nuageux"></span>
 						<div class="notif-content">
 							<p class="status">Status :<span>Failed</span></p>
 							<p>Lors du dernier push sur Gitlab, les tests de PHP UNIT ont détectés des problèmes de compatibilité</p>
@@ -49,7 +49,7 @@
 		<div class="block-container w25 wd33 wt50 wm100">
 			<div class="block square w100 gradient yellow">
 				<div class="block-content">
-						<span class="anim whiteSemiEnsoleille large" class="bodymovin" data-animation-path="animations/" data-anim-loop="true" data-name="White Semi Ensoleille"></span>
+						<span class="anim whiteSemiEnsoleille large" class="bodymovin" data-anim-loop="true" data-name="White Semi Ensoleille"></span>
 						<div class="notif-content">
 							<p class="status">Status :<span>In progress</span></p>
 							<p>L'intégration est en cours.</p>
@@ -66,7 +66,7 @@
 		<div class="block-container w25 wd33 wt50 wm100">
 			<div class="block square w100 gradient blue">
 				<div class="block-content">
-						<span class="anim whiteSun large" class="bodymovin" data-animation-path="animations/" data-anim-loop="true" data-name="White Sun"></span>
+						<span class="anim whiteSun large" class="bodymovin" data-anim-loop="true" data-name="White Sun"></span>
 						<div class="notif-content">
 							<p class="status">Status :<span>Success</span></p>
 							<p>Le référencement est optimal sur l'ensemble du projet.</p>
@@ -87,7 +87,7 @@
 			<div class="block-container w100 wd33 wt50 wm100">
 				<div class="block line w100 gradient blue">
 					<div class="block-content">
-							<span class="anim whiteSun small" class="bodymovin" data-animation-path="animations/" data-anim-loop="true" data-name="White Sun"></span>
+							<span class="anim whiteSun small" class="bodymovin" data-anim-loop="true" data-name="White Sun"></span>
 							<h3>Intégration</h3>
 							<div class="percentage w100 flex dirCol aiS jcB">
 								<p>100%</p>
@@ -101,7 +101,7 @@
 			<div class="block-container w100 wd33 wt50 wm100">
 				<div class="block line w100 gradient red">
 					<div class="block-content">
-							<span class="anim whiteSun small" class="bodymovin" data-animation-path="animations/" data-anim-loop="true" data-name="White Sun"></span>
+							<span class="anim whiteSun small" class="bodymovin" data-anim-loop="true" data-name="White Sun"></span>
 							<h3>Tests</h3>
 							<div class="percentage w100 flex dirCol aiS jcB">
 								<p>25%</p>
@@ -115,7 +115,7 @@
 			<div class="block-container w100 wd33 wt50 wm100">
 				<div class="block line w100 gradient yellow">
 					<div class="block-content">
-							<span class="anim whiteSun small" class="bodymovin" data-animation-path="animations/" data-anim-loop="true" data-name="White Sun"></span>
+							<span class="anim whiteSun small" class="bodymovin" data-anim-loop="true" data-name="White Sun"></span>
 							<h3>Jenkins</h3>
 							<div class="percentage w100 flex dirCol aiS jcB">
 								<p>50%</p>
@@ -136,7 +136,7 @@
 						<span>Développement</span>
 						Données entrées dans la BDD
 					</h3>
-					<span class="anim purpleSun small" class="bodymovin" data-animation-path="animations/" data-anim-loop="true" data-name="White Sun"></span>
+					<span class="anim purpleSun small" class="bodymovin" data-anim-loop="true" data-name="White Sun"></span>
 				</div>
 				<div class="block-content">
 					<canvas id="chartBDD" width="400" height="200"></canvas>
@@ -152,7 +152,7 @@
 						<span>Intégration</span>
 						Nombre de Commit
 					</h3>
-					<span class="anim purpleSun small" class="bodymovin" data-animation-path="animations/" data-anim-loop="true" data-name="White Sun"></span>
+					<span class="anim purpleSun small" class="bodymovin" data-anim-loop="true" data-name="White Sun"></span>
 				</div>
 				<div class="block-content">
 					<canvas id="chartCommit" width="400" height="200"></canvas>
@@ -168,7 +168,7 @@
 						<span>Général</span>
 						Avancement du projet
 					</h3>
-					<span class="anim purpleSun small" class="bodymovin" data-animation-path="animations/" data-anim-loop="true" data-name="White Sun"></span>
+					<span class="anim purpleSun small" class="bodymovin" data-anim-loop="true" data-name="White Sun"></span>
 				</div>
 				<div class="block-content">
 					<canvas id="chartAProject" width="400" height="100"></canvas>
@@ -184,7 +184,7 @@
 						<span>SEO</span>
 						Optimisation des textes
 					</h3>
-					<span class="anim purpleSun small" class="bodymovin" data-animation-path="animations/" data-anim-loop="true" data-name="White Sun"></span>
+					<span class="anim purpleSun small" class="bodymovin" data-anim-loop="true" data-name="White Sun"></span>
 				</div>
 				<div class="block-content">
 					<canvas id="chartSEO" width="400" height="400"></canvas>

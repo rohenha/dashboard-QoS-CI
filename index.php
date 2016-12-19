@@ -1,14 +1,14 @@
 <?php include "inc/header.php" ?>
 
 <div class="container flex dirCol aiC jcC wrap">
-	<div class="filters w100  flex dirRow aiC jcC">
+	<div class="filters w100">
 		<a href="#">All</a>
 		<a href="#" class="active">Design</a>
 		<a href="#">Développement</a>
 	</div>
 
 	<div class="row w100">
-		<div class="block-container w25 wd33 wt50 wm100">
+		<div class="block-container w20 wd33 wt50 wm100">
 			<a href="#" class="block project square w100">
 				<span class="bar-color red"></span>
 				<div class="block-content">
@@ -22,7 +22,7 @@
 			</a>
 		</div>
 
-		<div class="block-container w25 wd33 wt50 wm100">
+		<div class="block-container w20 wd33 wt50 wm100">
 			<div class="block project square w100">
 				<span class="bar-color red"></span>
 				<div class="block-content">
@@ -36,7 +36,7 @@
 			</div>
 		</div>
 
-		<div class="block-container w25 wd33 wt50 wm100">
+		<div class="block-container w20 wd33 wt50 wm100">
 			<div class="block project square w100">
 				<span class="bar-color red"></span>
 				<div class="block-content">
@@ -50,7 +50,7 @@
 			</div>
 		</div>
 
-		<div class="block-container w25 wd33 wt50 wm100">
+		<div class="block-container w20 wd33 wt50 wm100">
 			<div class="block project square w100">
 				<span class="bar-color red"></span>
 				<div class="block-content">
@@ -63,6 +63,21 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="block-container w20 wd33 wt50 wm100">
+			<div class="block project square w100">
+				<span class="bar-color red"></span>
+				<div class="block-content">
+						<img src="imgs/logo_keley.jpg" alt="">
+						<h3>SEO</h3>
+						<div class="percentage w100 flex dirCol aiS jcB">
+							<p>100%</p>
+							<span class="bar w100"></span>
+						</div>
+				</div>
+			</div>
+		</div>
+
 	</div>
 
 
