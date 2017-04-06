@@ -1,0 +1,30 @@
+.title{
+	margin: 10px 0;
+	padding: 10px;
+	box-sizing: border-box;
+	border-bottom: 2px solid darken($color2, 10%);
+	h1{
+		color: $color1;
+		font-family: $opensans;
+		font-size: 3em;
+		text-transform: uppercase;
+		letter-spacing: 2.09px;
+		span{
+			display: block;
+			color: lighten($color1,10%);
+			font-size: 0.3em;
+			font-weight: normal;
+			text-transform: inherit;
+			letter-spacing: normal;
+			font-style: italic;
+			position: relative;
+			top: 10px;
+		}
+	}
+	p{
+		font-family: $opensans;
+		color: lighten($color1,10%);
+		font-size: 0.9em;
+		text-align: justify;
+	}
+}

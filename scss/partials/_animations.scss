@@ -1,0 +1,20 @@
+.anim{
+	display: block;
+	transition: all 0.4s ease-out 0.2s;
+	&.large{
+		width: 150px;
+		@media screen and (max-width: $desktop) {
+			width: 100px;
+		}
+		@media screen and (max-width: $tablet) {
+			width: 90px;
+			margin-bottom: 5px;
+		}
+		@media screen and (max-width: $mobile) {
+			width: 200px;
+		}
+	}
+	&.small{
+		width: 60px;
+	}
+}

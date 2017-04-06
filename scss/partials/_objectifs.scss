@@ -1,0 +1,117 @@
+#objectifs{
+	position: fixed;
+	left: 100%;
+	top: 0;
+	height: 100%;
+	width: 500px;
+	background: $color1;
+	box-shadow: 0 0 0 0 rgba($color1, 0.4);
+	color: $color3;
+	z-index: 3;
+	transition: all 0.4s ease-out;
+	&.active{transform:translateX(-500px); 	box-shadow: -3px 0 15px 0 rgba($color1, 0.4); }
+	.cross{
+		position: absolute;
+		right: 20px;
+		top: 20px;
+	}
+	.container{width: 100%;height: 100%;}
+
+	h3{
+		font-family: $opensans;
+		text-transform: uppercase;
+		height: 50px;
+		line-height: 50px;
+		letter-spacing: 6px;
+		width: 100%;
+		text-align: center;
+	}
+	.objectifs-content{
+		overflow-y: scroll;
+		width: 100%;
+		height: calc(100% - 50px);
+		&::-webkit-scrollbar {
+		    width: 7px;
+			background-color: none;
+		}
+
+		&::-webkit-scrollbar-track {
+		    // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+		    // border-radius: 10px;
+		    // border : 1px solid $color3;
+		    background-color: darken($color1, 10%);
+		}
+
+		&::-webkit-scrollbar-thumb {
+		    // border-radius: 10px;
+		    // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+			// background-color: $color3;
+			background-color: lighten($color1, 40%);
+
+		}
+	}
+	.catObjectif{
+		margin: 25px 0;
+		box-sizing: border-box;
+		width: 100%;
+		background-color: $color3;
+		border-radius: 4px;
+		overflow: hidden;
+		font-family: $opensans;
+		transform: translateY(50px);
+		opacity: 0;
+		box-shadow: 0 6px 20px 0 rgba(lighten($color1, 20%), 0.6);
+		transition: all 0.3s ease-out;
+		&.show{transform: translateY(0); opacity: 1;}
+		h4{
+			padding: 10px;
+			box-sizing: border-box;
+			// background-color: lighten($color8, 30%);
+			color: $color3;
+			text-align: left;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			font-size: 1em;
+			span.anim{width: 40px;}
+		}
+		ul.list{
+			padding: 10px;
+			box-sizing: border-box;
+			color: $color1;
+			list-style: none;
+			>li{width: 100%; padding: 5px 0; position: relative;
+				&:not(:last-child){border-bottom: 1px solid $color2;}
+				&.active{
+					p{color: lighten($color1, 30%);
+						&::before{transform:translateX(0%);}
+					}
+				}
+			}
+			div.intitule{@extend .w75;}
+			div.done{@extend .w25; text-align: center;}
+			div{display: inline-block;}
+			p{
+				position: relative;
+				overflow: hidden;
+				display: inline-block;
+				font-size: 0.8em;
+				transition: all 0.3s ease-out;
+				&::before{
+					content: "";
+					display: block;
+					position: absolute;
+					height: 2px;
+					width: 100%;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					margin: auto;
+					transform:translateX(-100%);
+					background-color: $color8;
+					transition: all 0.3s ease-out;
+				}
+			}
+		}
+	}
+}

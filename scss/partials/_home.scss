@@ -1,0 +1,12 @@
+.project{
+		transition: all 0.3s ease-out;
+		top:0;
+	&:hover{
+		top:-5px;
+		.block-content{ h3{ transform: scale(1); } }
+	}
+	.block-content{
+		img{ width: 50%; }
+		h3{ margin-top: 40px; }
+	}
+}

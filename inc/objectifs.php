@@ -43,6 +43,15 @@
 						<li><div class="intitule"><p>Optimiser avec les mots clés du SEO</p></div><div class="done"><div class="checkbox"><input type="checkbox"><span class="overlay-checkbox"></span></div></div></li>
 					</ul>
 				</div>
+
+				<div class="catObjectif">
+					<h4 class="gradient red">Contenu</h4>
+					<ul class="list">
+						<li><div class="intitule"><p>Créer le contenu</p></div><div class="done"><div class="checkbox"><input type="checkbox"><span class="overlay-checkbox"></span></div></div></li>
+						<li><div class="intitule"><p>Optimiser avec les mots clés du SEO</p></div><div class="done"><div class="checkbox"><input type="checkbox"><span class="overlay-checkbox"></span></div></div></li>
+					</ul>
+				</div>
+
 			</div>
 		</div>
 	</div>
