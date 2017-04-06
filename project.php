@@ -13,7 +13,7 @@
 	</div>
 	<div class="row">
 		<div class="block-container w25 wd33 wt50 wm100">
-			<a href="#" class="block square w100 gradient green">
+			<div class="block square w100 gradient blue">
 				<div class="block-content">
 						<span class="anim whiteSun large" class="bodymovin" data-anim-loop="true" data-name="White Sun"></span>
 						<div class="notif-content">
@@ -26,7 +26,7 @@
 							<span class="bar w50"></span>
 						</div>
 				</div>
-			</a>
+			</div>
 		</div>
 
 		<div class="block-container w25 wd33 wt50 wm100">
